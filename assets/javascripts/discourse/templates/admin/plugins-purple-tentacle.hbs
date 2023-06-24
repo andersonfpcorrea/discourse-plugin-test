@@ -1,0 +1,25 @@
+<div style="display:flex;gap:1rem">
+  <div class="buttons">
+    {{d-button
+      label="purple_tentacle.show"
+      action="showTentacle"
+      icon="eye"
+      id="show-tentacle"
+    }}
+  </div>
+
+  <div class="buttons">
+    {{d-button
+      label="purple_tentacle.hide"
+      action="hideTentacle"
+      icon="eye-slash"
+      id="hide-tentacle"
+    }}
+  </div>
+</div>
+
+{{#if tentacleVisible}}
+  <div class="tentacle">
+    <img src="http://eviltrout.com/images/tentacle.gif" />
+  </div>
+{{/if}}
